@@ -6,7 +6,7 @@ use GDO\Form\MethodForm;
 use GDO\Net\HTTP;
 use GDO\Facebook\GDO_OAuthToken;
 use GDO\User\GDO_User;
-use GDO\User\GDO_Session;
+use GDO\Session\GDO_Session;
 use GDO\Core\GDT_Hook;
 use GDO\Login\Method\Form;
 use GDO\Util\Common;

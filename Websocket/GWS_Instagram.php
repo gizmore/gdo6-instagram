@@ -6,7 +6,7 @@ use GDO\User\GDO_User;
 use GDO\Websocket\Server\GWS_Command;
 use GDO\Websocket\Server\GWS_Commands;
 use GDO\Websocket\Server\GWS_Message;
-use GDO\User\GDO_Session;
+use GDO\Session\GDO_Session;
 use GDO\Instagram\Method\Auth;
 
 final class GWS_Instagram extends GWS_Command
