@@ -54,7 +54,9 @@ final class Module_Instagram extends GDO_Module
 	public function hookLoginForm(GDT_Form $form) { $this->hookRegisterForm($form); }
 	public function hookRegisterForm(GDT_Form $form)
 	{
-		$form->addField(GDT_Button::make('link_instagram_auth')->secondary()->href(href('Instagram', 'Auth')));
+	    /** @var $cont \GDO\UI\GDT_Container **/
+	    $cont = $form->getField('btncont');
+	    $cont->addField(GDT_Button::make('link_instagram_auth')->secondary()->href(href('Instagram', 'Auth')));
 	}
 
 	public function hookIGUserAuthenticated(GDO_User $user, $accessToken, $data)
