@@ -10,7 +10,7 @@ use GDO\Util\Strings;
  */
 final class GDT_IGAuthButton extends GDT_Button
 {
-	public function __construct()
+	protected function __construct()
 	{
 		$this->name('btn_instagram');
 		$this->href($this->instagramURL());
