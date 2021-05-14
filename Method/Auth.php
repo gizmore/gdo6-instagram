@@ -84,7 +84,7 @@ class Auth extends MethodForm
 		
 		$user = GDO_OAuthToken::refresh($accessToken, $fbData, 'IG');
 		
-		GDO_User::$CURRENT = $user;
+		GDO_User::setCurrent($user);
 		GDO_Session::instance()->saveVar('sess_user', $user->getID());
 		
 		$activated = $user->tempGet('justActivated');
