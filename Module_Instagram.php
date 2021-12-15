@@ -72,7 +72,7 @@ final class Module_Instagram extends GDO_Module
 			
 			# custom avatar set. do not check for updates.
 			if ($avatar->isPersisted() &&
-				(!Strings::startsWith($file->getName(), 'IG-Avatar-')) )
+				(!str_starts_with($file->getName(), 'IG-Avatar-')) )
 			{
 				return;
 			}
